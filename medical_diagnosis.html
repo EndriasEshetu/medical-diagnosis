@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Diagnosis Expert System</title>
+    <link rel="stylesheet" href="medical_diagnosis.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Medical Diagnosis Expert System</h2>
+
+      <div id="instructions">
+        <p>
+          Welcome! Please answer the following questions with
+          <strong>Yes</strong> or <strong>No</strong>.
+        </p>
+        <button onclick="startDiagnosis()">Start Diagnosis</button>
+      </div>
+
+      <div id="identity" style="display: none">
+        <p>Please Enter your Name and Age.</p>
+        <input class="name" type="text" placeholder="Enter name" />
+        <input class="age" type="number" placeholder="Age" />
+        <button onclick="identify()">Submit</button>
+      </div>
+
+      <div id="diagnosis" style="display: none">
+        <p id="progress"></p>
+        <p class="question" id="question"></p>
+        <button onclick="answer(true)">Yes</button>
+        <button onclick="answer(false)">No</button>
+      </div>
+
+      <div class="result" id="result"></div>
+    </div>
+    <div class="developer">
+      <h2>ADAMA SCIENCE AND</h2>
+      <h2>TECNOLOGY UNIVERSITY</h2>
+      <h3>Developed By:</h3>
+      <li>Endrias Eshetu</li>
+      <p>Department: <strong>CSE</strong></p>
+    </div>
+
+    <script src="medical_diagnosis.js"></script>
+  </body>
+</html>
